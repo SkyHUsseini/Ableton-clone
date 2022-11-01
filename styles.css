@@ -169,7 +169,7 @@ Page about
   position: relative;
   height: 60vh;
   width: 45vw;
-  background-image: url(/pageAbout.jpg);
+  background-image: url('./pageAbout.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: 120px;
@@ -180,7 +180,7 @@ Page about
   position: absolute;
   height: 67vh;
   width: 27vw;
-  background-image: url(/pageAbout2.jpg);
+  background-image: url('./pageAbout2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   left: 35%;
