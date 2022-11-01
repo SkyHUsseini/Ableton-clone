@@ -169,7 +169,7 @@ Page about
   position: relative;
   height: 60vh;
   width: 45vw;
-  background-image: url('./pageAbout.jpg');
+  background-image: url("./pageAbout.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: 120px;
@@ -180,7 +180,7 @@ Page about
   position: absolute;
   height: 67vh;
   width: 27vw;
-  background-image: url('./pageAbout2.jpg');
+  background-image: url("./pageAbout2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   left: 35%;
@@ -192,7 +192,7 @@ Page  TEXT 2 // same class as 1
 --------------
 */
 .two {
-  padding-top: 75px;
+  padding-top: 150px;
 }
 /*
 --------------
@@ -221,7 +221,8 @@ Green  bg Collage
 .collage-green {
   height: 150vh;
   position: relative;
-  margin: 100px 0;
+  /* margin: 100px 0; */
+  margin: 0;
   padding-bottom: 120px;
 }
 .greenBg {
@@ -247,17 +248,17 @@ Green  bg Collage
 }
 
 .greenIMG1 {
-  background-image: url(/greenBg1.png);
+  background-image: url("./greenBg1.png");
   top: 10%;
   left: 13%;
 }
 .greenIMG2 {
-  background-image: url(/greenBg2.png);
+  background-image: url("./greenBg2.png");
   top: 55%;
   left: 13%;
 }
 .greenIMG3 {
-  background-image: url(/greenBg3.png);
+  background-image: url("./greenBg3.png");
   right: 0;
   height: 90vh;
   width: 40vw;
@@ -267,7 +268,7 @@ Green  bg Collage
 
 /*90vh imagae --> analytics*/
 .analytics90vh {
-  background-image: url(/analytics90vh.png);
+  background-image: url("./analytics90vh.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px 10px;
@@ -278,9 +279,12 @@ Green  bg Collage
 }
 /*
 --------------
-Page  TEXT 5 // same class as 1
+Page  TEXT 4 & 5 // same class as 1
 --------------
 */
+.four {
+  margin-top: 50px;
+}
 .five p {
   padding: 7px;
 }
@@ -305,7 +309,7 @@ Page  TEXT 5 // same class as 1
 .purpleIMG1 {
   position: absolute;
 
-  background-image: url(/purpleIMG1.png);
+  background-image: url("./purpleIMG1.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -316,7 +320,7 @@ Page  TEXT 5 // same class as 1
 .purpleIMG2 {
   position: absolute;
 
-  background-image: url(/purpleIMG2.png);
+  background-image: url("./purpleIMG2.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px;
@@ -343,14 +347,14 @@ Page  TEXT 5 // same class as 1
   padding: 10vw 8vw;
 }
 .blueIMG {
-  background-image: url(/blueIMG.png);
+  background-image: url("./blueIMG.png");
   height: 100%;
   width: 50%;
 }
-.blueText h2 {
+.blueText {
   font-size: 27px;
   line-height: 1.5;
-  font-weight: normal;
+  font-weight: 700;
 }
 .blueText-link {
   padding: 20px 0;
@@ -391,6 +395,57 @@ Responsive 1024px
   .four {
     padding-top: 40px;
   }
+  /* for purple collage*/
+
+  .collage-pruple {
+    height: 120vh;
+    width: 72vw;
+  }
+  .purpleBg {
+    background-color: #d5b3ff;
+    left: 20vw;
+    height: 120vh;
+    width: 66vw;
+  }
+  .purpleIMG1 {
+    height: 400px;
+    width: 350px;
+    margin-left: 400px;
+    top: 14%;
+  }
+  .purpleIMG2 {
+    height: 300px;
+    width: 350px;
+    top: 30%;
+    margin-left: 100px;
+  }
+  /* For the blue collage*/
+
+  .collage-blue {
+    height: 400px;
+    width: 1000px;
+  }
+  .blueBg {
+    height: 100%;
+    width: 50%;
+    padding: 10vw 8vw;
+  }
+  .blueIMG {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .blueText {
+    font-size: 20px;
+    line-height: 1.5;
+    /* font-weight: normal; */
+    font-weight: 600;
+  }
+  .blueText-link {
+    font-size: 20px;
+    padding: 17px 0;
+  }
 }
 @media (max-width: 768px) {
   /*for Nav bar*/
@@ -416,7 +471,7 @@ Responsive 1024px
   }
   .page-image::after {
     font-size: 72px;
-    top: 52%;
+    top: 35%;
     left: 33%;
     z-index: 10;
   }
@@ -435,23 +490,114 @@ Responsive 1024px
   }
 
   /*for PAGE IMAGE - yellow Bg*/
-
+  .yellowBg {
+    position: absolute;
+    height: 80vh;
+    width: 59vw;
+    right: 0;
+    /* padding-bottom: 200px; */
+  }
   .Pageabout-img {
     position: relative;
-    height: 60vh;
-    width: 46vw;
+    height: 300px;
+    width: 500px;
     background-size: cover;
-    margin-left: 100px;
+    margin-left: 70px;
     margin-right: 10px;
     margin-top: 120px;
   }
   .Pageabout-img2 {
-    height: 67vh;
+    /* height: 67vh;
     width: 25vw;
     left: 35%;
-    top: 40%;
+    top: 40%; */
+    display: none;
+  }
+  /* for green collage*/
+
+  .collage-green {
+    height: 150vh;
+    position: relative;
+    /* margin: 100px 0; */
+    margin: 0;
+    padding-bottom: 120px;
+  }
+  .greenBg {
+    height: 140vh;
+    width: 70vw;
+    right: 40%;
+    left: 0;
+  }
+
+  .greenIMG1 {
+    background-image: url("./greenBg1.png");
+    top: 10%;
+    left: 13%;
+  }
+  .greenIMG2 {
+    background-image: url("./greenBg2.png");
+    top: 55%;
+    left: 13%;
+  }
+  .greenIMG3 {
+    background-image: url("./greenBg3.png");
+    /* right: 0; */
+    height: 90vh;
+    width: 40vw;
+    margin-right: 0px;
+    margin-top: 190px;
+  }
+
+  /* for purple collage*/
+
+  .collage-pruple {
+    height: 95vh;
+    width: 72vw;
+    margin-bottom: 0px;
+  }
+  .purpleBg {
+    background-color: #d5b3ff;
+    left: 5vh;
+    height: 90vh;
+    width: 90vw;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  }
+  .purpleIMG1 {
+    display: none;
+  }
+  .purpleIMG2 {
+    height: 400px;
+    width: 400px;
+    top: 15vh;
+    left: 10vw;
+  }
+  /* For the blue collage*/
+
+  .collage-blue {
+    height: 300px;
+    width: 700px;
+  }
+  .blueBg {
+    height: 100%;
+    width: 50%;
+    padding: 10vw 8vw;
+  }
+  .blueIMG {
+    height: 100%;
+    width: 50%;
+  }
+  .blueText {
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  .blueText-link {
+    font-size: 15px;
+    padding: 17px 0;
   }
 }
+
 @media (max-width: 425px) {
   /*for Ableton image*/
   .page-image {
